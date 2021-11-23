@@ -54,6 +54,7 @@ def stat_p1(v1,v2):
     """
     if v2 < v1:
         v1, v2 = v2, v1
+    v1, v2 = v1 - 5, v2 + 5 # todo: écat (pour permetre à certain individue de sortire du lot.
     return (v2/(1+exp(-random.random()*10+5)))+v1   # random.random() == x
 
 
@@ -67,8 +68,6 @@ def max_min(v_min,v_max,size=1000):
     while (v < v_min) or (v > v_max):
         v2 = random.random()
         v = v2 * size
-        print(v)
-        print(f"\tmin:{v_min},max:{v_max}")
     return v
 
 

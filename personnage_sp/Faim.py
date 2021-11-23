@@ -1,5 +1,5 @@
 from personnage_sp.basic_sp import Basic
-from personnage_sp.basic_sp.Math_stat import stat_p1
+from personnage_sp.basic_sp.Math.Math_stat import stat_p1
 class Faim(Basic):
     def __init__(self,v=10000,v_min=9400,v_max=10000,m_min=8,m_max=30,size=10000,pere=None,mere=None,**kwargs):
         if (pere != None) and (mere !=None):

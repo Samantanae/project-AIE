@@ -1,6 +1,31 @@
 import random
 print("fichier basic ouvert")
-from personnage_sp.basic_sp.Math_stat import ecart_type
+from personnage_sp.basic_sp.Math.Math_stat import ecart_type
+from personnage_sp.basic_sp.basic_of_Basic.So_basic import So_basic
+
+class Basic_v3(So_basic):
+
+    def __init__(self,pere=None,mere=None,v_max=1,v_min=1, v=1, m=0, m_max=0, m_min=0, size=100):
+        super(Basic_v3, self).__init__(pere=pere, mere=mere,
+                                       v_max=v_max, v_min=v_min, v=v,
+                                       m=m, m_max=m_max, m_min=m_min)
+
+    def save_dataBase_v1(self):
+        pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 class Basic:
     def __init__(self, v=1, v_min=1, v_max=1, m=0, m_max=0, m_min=0, size=100,d=None,Index=None, **kwargs):
@@ -129,38 +154,24 @@ class Basic:
 
 
 
+class Delta:
+    """
+    cette classe permet la variation non constante de v.
 
+    PASSAGE EN MODE DATABASE
+    """
+    def __init__(self):
+
+        pass
 
         #####################################################
         #####################################################
 class basic_effet:
     __slots__ = "v"
     def __init__(self,v):
-       """
+        """
         :param v: test
         :param genetique =
-        :param
-        :param
-        :param
-        :param
-        :param
-        :param
-        :param
-        :param
-        :param
-        :param
-        :param
-        :param
-        :param
-        :param
-        :param
-        :param
-        :param
-        :param
-        :param
-        :param
-        :param
-        :param
         :param
         :param
         :param
@@ -183,31 +194,80 @@ class basic_effet:
         --------------------------------------------
 
         """
-        pass
+        s=0
 
+from personnage_sp.basic_sp.Math.Math_stat import stat_p1,max_min
 
+def convert_day_to_m(valeur,nombre_de_jour,type):
+    s = valeur
 
-
-from personnage_sp.basic_sp.Math_stat import stat_p1,max_min
-
-class Basic_v2()
-    def __init__(self,pere=None,mere=None, v=1, v_min=1, v_max=1, m=0, m_max=0, m_min=0, size=100):
+class Basic_v2():
+    def __init__(self,v_max=1,v_min=1,pere=None,mere=None, v=1, m=0, m_max=0, m_min=0, size=100):
         if (pere != None) and (mere != None):    #todo: alors, il y a des parents
-            self.v_max = stat_p1(mere.v_max,pere.v_max)
-            self.v_min = stat_p1(mere.v_min,pere.v_min)
-            self.m_min = stat_p1(mere.m_min,pere.m_min)
-            self.m_max = stat_p1(mere.m_max,pere.m_max)
-            self.v = stat_p1(self.v_max,self.v_min)
+            self.__init__child(pere=pere,mere=mere)
+
+        else:
+            self.v_max = random.uniform(0,100)    #todo: À REFAIRE
+            self.v_min = random.uniform(0,100)
+            self.m_min = random.uniform(0,5)
+            self.m_min = random.uniform(0,5)
+            self.v = stat_p1(self.v_min,self.v_max)
             self.m = stat_p1(self.m_min,self.m_max)
-            self.d = {
-                        "génétique": [],
-                        "maladie":[],
-                        "medicament":[]
-                      }
+
+    def __init__child(self,pere,mere):
+        """
+        cette méthode permet de surdéfnire l'ignitialisation dans le cas d'un enfant.
+        :param pere:
+        :param mere:
+        :return:
+        """
+        self.v_max = stat_p1(mere.v_max, pere.v_max)
+        self.v_min = stat_p1(mere.v_min, pere.v_min)
+        self.m_min = stat_p1(mere.m_min, pere.m_min)
+        self.m_max = stat_p1(mere.m_max, pere.m_max)
+        self.v = stat_p1(self.v_max, self.v_min)
+        self.m = stat_p1(self.m_min, self.m_max)
+        self.d = {  # todo: d pour diver
+            "génétique": [],
+            "maladie": [],
+            "medicament": []
+        }
 
 
 
+    def av(self,dv=0,dv_max=0,dv_min=0,dm=0,dm_max=0,dm_min=0,**kwargs):
+        """
 
+        :param dv:
+        :param dv_max:
+        :param dv_min:
+        :param dm:
+        :param dm_max:  j'ai un soudain doute sur sont utiliter
+        :param dm_min:
+        :param kwargs:
+        :return:
+        """
+        # todo: possible amélioration de la mémoire demander,
+
+        self.v += dv
+        self.m += dm
+        self.v_max += dv_max
+        self.v_min += dv_min
+        self.m_max += dm_max
+        self.m_min += dm_min
+        return [self.v,
+                self.m,
+                self.v_max,
+                self.v_min,
+                self.m_max,
+                self.m_min,
+                ]
+
+
+
+if __name__ == '__main__':
+    s = "3"
+    eval(s)
 
 
 
