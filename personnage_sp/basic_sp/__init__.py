@@ -9,7 +9,6 @@ class Basic_v3(So_basic):
         super(Basic_v3, self).__init__(pere=pere, mere=mere,
                                        v_max=v_max, v_min=v_min, v=v,
                                        m=m, m_max=m_max, m_min=m_min)
-
     def save_dataBase_v1(self):
         pass
 

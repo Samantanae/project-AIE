@@ -24,6 +24,8 @@ class Faim(Basic):
         self.size   = stat_p1(f_mere.size,f_pere.size)
         self.m      = stat_p1(f_mere.m,f_pere.m)
 
+from personnage_sp.basic_sp.basic_of_Basic.So_basic import So_basic
+class Faimv2()
 
 
 
