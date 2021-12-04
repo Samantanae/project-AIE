@@ -19,10 +19,10 @@ from direct.actor.Actor import Actor
 class Personnage:
     def __init__(self, mere=None, pere=None,master=None):
         if master is not None:
-            self.M0 = master.attachNewNode("Personnage")
+            self.M0 = master.attachNewNode("Personnage")    # todo: noeux du personnage: pour un seule personnage
 
-            self.Geo_and_visual = Geo_and_visual(master=self.M0)
-            print("\t |\t |\t |\t |\t |\t attention, un personnage est oublier quelle que part")
+            self.geo_and_visual = Geo_and_visual(master=self.M0)
+
         if(mere!=None) and (pere != None):
             self.faim = Faim(mere=mere.faim, pere=pere.faim)
 

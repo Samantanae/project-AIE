@@ -7,4 +7,6 @@ class Personnages:
         """
         :param master:
         """
-        self.master = master
+        self.M0 = master.attachNewNode("Personnages")  # todo: noeux du personnages: pour un seule personnage
+
+
