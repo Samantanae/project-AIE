@@ -3,7 +3,21 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="\personnage_sp\basic_sp\basic_of_Basic\Faim\Faim.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\personnage_sp\basic_sp\basic_of_Basic\test.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\personnage_sp\test.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

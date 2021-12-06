@@ -6,48 +6,54 @@ import csv
 
 
 class So_basic:
-    __slots__ = "v_min", "v", "v_max",\
-                "m", "m_max", "m_min",\
-                "Bv_max", "save", "Id","file"
+    __slots__ = "v_min", "v", "v_max", \
+                "m", "m_max", "m_min", \
+                "Bv_max", "save", "Id", "file"
 
     def __init__(self, file=None, Id=None, pere=None, mere=None, v_max=1, v_min=1, v=1, m=0, m_max=0, m_min=0,
                  size=100):
 
         self.save = False
         self.Id = Id
-        self.file=file
+        self.file = file
+        self.Bv_max = v_max
 
         if (pere is not None) and (mere is not None):  # todo: alors, il y a des parents
             self.__init__child(pere=pere, mere=mere)
-        else:
-            if v_max < v_min:  # inversion
-                v_max, v_min = v_min, v_max  # évitons les boucles infinie causé par des problemes non réaliste (du type des max plus petit que des min)
-            if m_max < m_min:  # inversion
-                m_max, m_min = m_min, m_max
-
-            self.v_min, self.v_max = v_min, v_max
-            self.m_min, self.m_max = m_min, m_max
-            self.Bv_max = v_max
-
-            if v != 1:
-                self.v = v
-            else:
-                if (v_min == 1) and (v_max == 1):
-                    self.v = v
-                else:
-                    self.v = stat_p1(self.v_min, self.v_max)
-            if m != 0:
-                self.m = m
-            else:
-                if (m_min == 0) and (m_min == 0):
-                    self.m = m
-                else:
-                    self.m = stat_p1(self.m_min, self.m_max)
 
         if file is not None:
             self._data_new()
+
+    def _init_p2(self, v, m, v_min, v_max, m_min, m_max):
+        v_min = abs(v_min)
+        v_max = abs(v_max)
+        if v_max < v_min:  # inversion
+            v_max, v_min = v_min, v_max  # évitons les boucles infinie causé par des problemes non réaliste (du type des max plus petit que des min)
+        if m_max < m_min:  # inversion
+            m_max, m_min = m_min, m_max
+
+        self.v_min, self.v_max = v_min, v_max
+        self.m_min, self.m_max = m_min, m_max
+        self.Bv_max = v_max
+
+        if v != 1:
+            self.v = v
+        else:
+            if (v_min == 1) and (v_max == 1):
+                self.v = v
+            else:
+                self.v = stat_p1(self.v_min, self.v_max)
+        if m != 0:
+            self.m = m
+        else:
+            if (m_min == 0) and (m_min == 0):
+                self.m = m
+            else:
+                self.m = stat_p1(self.m_min, self.m_max)
+
     def _data_save(self):
         pass
+
     def _etape2_data(self):
         pass
 
@@ -79,6 +85,7 @@ class So_basic:
         print(len(ind_apres))
         self.Id = int(list(ind_apres)[0])  # todo:         l'ID est apliqué ici.
         df2.to_csv(self.file, index=False)  # todo: optimisation possible ici
+
     def __init__child(self, pere, mere):
         """
         cette méthode permet de surdéfnire l'ignitialisation dans le cas d'un enfant.
@@ -130,11 +137,14 @@ class So_basic:
 def test():
     for e in range(100):
         v1 = So_basic(file="test.csv",
-                      v_max=random.randint(0,100),
-                      v_min=random.randint(0,100),
-                      m_max=random.randint(0,10),
-                      m_min=random.randint(0,10))
+                      v_max=random.randint(0, 100),
+                      v_min=random.randint(0, 100),
+                      m_max=random.randint(0, 10),
+                      m_min=random.randint(0, 10))
+
+
 test()
+
 
 def verif_existe(file_name: str):
     s = False
@@ -149,6 +159,3 @@ def verif_existe(file_name: str):
 import csv
 import pandas as pd
 import os
-
-
-

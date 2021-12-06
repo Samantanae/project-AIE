@@ -1,4 +1,4 @@
-from personnage_sp.Faim import Faim
+from personnage_sp.basic_sp.basic_of_Basic.Faim.Faim import Faim
 from personnage_sp.Soif import Soif
 
 
