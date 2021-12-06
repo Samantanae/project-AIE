@@ -1,5 +1,5 @@
 from personnage_sp.basic_sp.Math.Math_stat import ecart_type,gauss,stat_p1
-from personnage_sp.basic_sp.basic_of_Basic.Faim.Faim import Faim
+from personnage_sp.caracteristique.Faim.Faim import Faim
 from personnage_sp.basic_sp.pd import Geo_and_visual
 
 

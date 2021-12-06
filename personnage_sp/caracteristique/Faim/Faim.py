@@ -31,14 +31,14 @@ class Faim(Basic):
     #__slots__ = "v_min", "v", "v_max",\
     #            "m", "m_max", "m_min",\
     #            "Bv_max", "save", "Id","file"
-    def __init__(self, Id=None, pere=None, mere=None, v_max=1, v_min=1, v=1, m=0, m_max=0, m_min=0,
+    def __init__(self, Id=None, pere=None, mere=None, v_max=100, v_min=30, m_max=2, m_min=0.000000000000001,
                  size=100):
         super(Faim, self).__init__(
             file="Faim.csv", Id=Id,
             pere=pere, mere=mere,
             v_max=v_max, v_min=v_min,
             m_max=m_max, m_min=m_min,
-            v=v, m=m, size=size)
+            size=size)
 
 
 

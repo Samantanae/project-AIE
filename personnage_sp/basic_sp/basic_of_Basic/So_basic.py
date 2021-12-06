@@ -143,7 +143,7 @@ def test():
                       m_min=random.randint(0, 10))
 
 
-test()
+# test()
 
 
 def verif_existe(file_name: str):
