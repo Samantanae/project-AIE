@@ -27,6 +27,14 @@ class So_basic:
                       m_min=m_min,m_max=m_max)
         if file is not None:
             self._data_new()
+    def __del__(self):
+        del self.v
+        del self.m
+        del self.v_min
+        del self.v_max
+        del self.m_min
+        del self.m_max
+        del self.Bv_max
 
     def _init_p2(self, v, m, v_min, v_max, m_min, m_max):
         v_min = abs(v_min)

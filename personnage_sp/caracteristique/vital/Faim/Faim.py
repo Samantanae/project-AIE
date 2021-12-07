@@ -34,11 +34,8 @@ class Faim(Basic):
     def __init__(self, Id=None, pere=None, mere=None, v_max=100, v_min=30, m_max=2, m_min=0.000000000000001,
                  size=100):
         super(Faim, self).__init__(
-            file="Faim.csv", Id=Id,
-            pere=pere, mere=mere,
-            v_max=v_max, v_min=v_min,
-            m_max=m_max, m_min=m_min,
-            size=size)
+            file="Faim.csv", Id=Id,pere=pere, mere=mere,v_max=v_max,
+            v_min=v_min,m_max=m_max, m_min=m_min,size=size)
 
 
 

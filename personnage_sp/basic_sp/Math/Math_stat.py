@@ -55,7 +55,7 @@ def stat_p1(v1,v2):
     if v2 < v1:
         v1, v2 = v2, v1
     v1, v2 = v1 - 5, v2 + 5 # todo: écat (pour permetre à certain individue de sortire du lot.
-    return (v2/(1+exp(-random.random()*10+5)))+v1   # random.random() == x
+    return abs((v2/(1+exp(-random.random()*10+5)))+v1)   # random.random() == x
 
 
 
