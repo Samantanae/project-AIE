@@ -1,6 +1,6 @@
 from personnage_sp.caracteristique.Faim.Faim import Faim
-from personnage_sp.Soif import Soif
-
+from personnage_sp.caracteristique.Soif.soif import Soif
+# from personnage_sp.caracteristique
 
 class Personnage:
     def __init__(self,mere=None,pere=None):

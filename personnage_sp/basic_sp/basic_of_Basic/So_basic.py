@@ -12,15 +12,19 @@ class So_basic:
 
     def __init__(self, file=None, Id=None, pere=None, mere=None, v_max=1, v_min=1, v=1, m=0, m_max=0, m_min=0,
                  size=100):
-
-        self.save = False
+        if file:
+            self.save = True
+        else:
+            self.save = False
         self.Id = Id
         self.file = file
         self.Bv_max = v_max
 
         if (pere is not None) and (mere is not None):  # todo: alors, il y a des parents
             self.__init__child(pere=pere, mere=mere)
-
+        self._init_p2(v=v,m=m,
+                      v_min=v_min,v_max=v_max,
+                      m_min=m_min,m_max=m_max)
         if file is not None:
             self._data_new()
 
@@ -71,8 +75,30 @@ class So_basic:
             print("\t\t\t reussi")
         except:
             df1 = pd.DataFrame(columns=columns)  # todo: optimisation possible ici
-        d = {"v": [self.v], "m": [self.m], "v_min": [self.v_min], "v_max": [self.v_max],
-             "m_min": [self.m_min], "m_max": [self.m_max], "Bv_max": [self.Bv_max]}
+        d = {
+             "m_min": [self.m_min], "m_max": [self.m_max]}
+        if self.v_min:
+            d["v_min"]=[self.v_min]
+        else:
+            d["v_min"]=[None]
+        if self.v_max:
+            d["v_max"]=[self.v_max]
+        else:
+            d["v_max"]=[None]
+
+        if self.v:
+            d["v"]=[self.v]
+        else:
+            d["v"]=[None]
+        if self.m:
+            d["m"]=[self.m]
+        else:
+            d["m"]=[None]
+        if self.Bv_max:
+            d["Bv_max"]=[self.Bv_max]
+        else:
+            d["Bv_max"]=[None]
+
         df_new_row = pd.DataFrame(d)
         while len(df_new_row) > 1:  # todo: sans cette boucle, il aurais un dataFrame de 2 lignes (identique)
             df_new_row = df_new_row.pop(df_new_row.index[1:-1])
