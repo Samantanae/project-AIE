@@ -9,4 +9,4 @@ class Personnages:
         """
         self.M0 = master.attachNewNode("Personnages")  # todo: noeux du personnages: pour un seule personnage
 
-
+    ss=9

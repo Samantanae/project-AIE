@@ -3,15 +3,17 @@ import random
 
 import pandas as pd
 import csv
-
+from json import dump,load,dumps,loads
 
 class So_basic:
     __slots__ = "v_min", "v", "v_max", \
                 "m", "m_max", "m_min", \
-                "Bv_max", "save", "Id", "file"
+                "Bv_max", "save", "Id", "file","diver"
 
     def __init__(self, file=None, Id=None, pere=None, mere=None, v_max=1, v_min=1, v=1, m=0, m_max=0, m_min=0,
-                 size=100):
+                 size=100,diver=None):
+        self.diver = diver
+
         if file:
             self.save = True
         else:
@@ -62,7 +64,8 @@ class So_basic:
                 self.m = m
             else:
                 self.m = stat_p1(self.m_min, self.m_max)
-
+    def _data_load(self):
+        pass
     def _data_save(self):
         pass
 
@@ -75,7 +78,7 @@ class So_basic:
         module de gestion de trensefer de données.
         """
         self.save = True
-        columns = ["v", "m", "v_min", "v_max", "m_min", "m_max", "Bv_max"]
+        columns = ["v", "m", "v_min", "v_max", "m_min", "m_max", "Bv_max","diver"]
         try:
             df1 = pd.read_csv(self.file)  # todo: optimisation possible ici
 
@@ -83,29 +86,16 @@ class So_basic:
             print("\t\t\t reussi")
         except:
             df1 = pd.DataFrame(columns=columns)  # todo: optimisation possible ici
-        d = {
-             "m_min": [self.m_min], "m_max": [self.m_max]}
-        if self.v_min:
-            d["v_min"]=[self.v_min]
-        else:
-            d["v_min"]=[None]
-        if self.v_max:
-            d["v_max"]=[self.v_max]
-        else:
-            d["v_max"]=[None]
+        d = {"Bv_max":[self.Bv_max],
+             "m_min": [self.m_min],
+             "m_max": [self.m_max],
+             "v_min":[self.v_min],
+             "v_max":[self.v_max],
+             "v":[self.v],
+             "m":[self.m],
+             "diver":[self.diver]
+             }
 
-        if self.v:
-            d["v"]=[self.v]
-        else:
-            d["v"]=[None]
-        if self.m:
-            d["m"]=[self.m]
-        else:
-            d["m"]=[None]
-        if self.Bv_max:
-            d["Bv_max"]=[self.Bv_max]
-        else:
-            d["Bv_max"]=[None]
 
         df_new_row = pd.DataFrame(d)
         while len(df_new_row) > 1:  # todo: sans cette boucle, il aurais un dataFrame de 2 lignes (identique)
