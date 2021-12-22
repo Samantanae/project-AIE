@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\personnage_sp\Faim.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\personnage_sp\basic_sp\basic_of_Basic\test.csv">
           <value>
             <Attribute>
