@@ -1,5 +1,5 @@
-from personnage_sp.caracteristique.vital.Faim.Faim import Faim
-from personnage_sp.caracteristique.vital.Soif.soif import Soif
+from personnage_sp.caracteristique.vital.body.Faim import Faim
+from personnage_sp.caracteristique.vital.body.Soif import Soif
 # from personnage_sp.caracteristique
 
 class Personnage:

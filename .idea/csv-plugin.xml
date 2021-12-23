@@ -24,6 +24,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\personnage_sp\caracteristique\vital\Soif\Faim.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\personnage_sp\test.csv">
           <value>
             <Attribute>
