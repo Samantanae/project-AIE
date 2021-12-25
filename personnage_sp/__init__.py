@@ -40,6 +40,6 @@ class Personnage:
             self.faim = Faim()
 
 
-P1 = Personnage()
-P2 = Personnage()
-P3 = Personnage(P1,P2)
+#P1 = Personnage()
+#P2 = Personnage()
+#P3 = Personnage(P1,P2)

@@ -189,7 +189,7 @@ class Map:
                 nrandomize = i
             elif k == "M":
                 self.M = i[:]
-        with open("data.txt","w") as da:
+        with open("data.txt", "w") as da:
             if randmize and option2:
                 for y in range(y_min,y_max,1):
                     for x in range(x_min,x_max,1):
