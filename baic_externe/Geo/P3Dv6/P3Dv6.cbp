@@ -17,6 +17,7 @@
 					<Add option="-Wall" />
 					<Add option="-DBUILD_DLL" />
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add library="user32" />
@@ -33,6 +34,7 @@
 					<Add option="-Wall" />
 					<Add option="-DBUILD_DLL" />
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -40,8 +42,15 @@
 				</Linker>
 			</Target>
 		</Build>
+		<Unit filename="Untitled2.cpp" />
+		<Unit filename="include/P3D.h" />
+		<Unit filename="include/Patch.h" />
+		<Unit filename="include/in.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="main.h" />
+		<Unit filename="src/P3D.cpp" />
+		<Unit filename="src/Patch.cpp" />
+		<Unit filename="src/in.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

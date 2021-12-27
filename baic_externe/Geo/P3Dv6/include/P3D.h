@@ -7,6 +7,8 @@ class P3D
     public:
         /** Default constructor */
         P3D(int X=0,int Y = 0, int C = 0);
+        void nullifier();  /*None*/
+        bool& null();    /*None?*/
 
         bool& in(std::vector<P3D> xy);
         friend bool operator==(P3D &a, const P3D &b);
@@ -17,6 +19,7 @@ class P3D
         int x;
         int y;
         int c;
+        bool actif;
     private:
 };
 
