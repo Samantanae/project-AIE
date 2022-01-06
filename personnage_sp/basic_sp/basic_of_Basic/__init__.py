@@ -1,1 +1,0 @@
-print("so basic initialiseted")

@@ -1,0 +1,1 @@
+print("fichier soif initialiser")

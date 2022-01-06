@@ -1,1 +1,0 @@
-print("fichier soif initialiser")

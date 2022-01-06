@@ -1,5 +1,5 @@
 from direct.showbase.ShowBase import ShowBase
-from Personnages import Personnages
+from _Personnage_.Personnages import Personnages
 
 class MyApp(ShowBase):
 
