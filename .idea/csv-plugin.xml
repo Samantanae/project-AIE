@@ -17,6 +17,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\_Personnage_\personnage_sp\basic_sp\basic_of_Basic\test.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\_Personnage_\test.csv">
           <value>
             <Attribute>

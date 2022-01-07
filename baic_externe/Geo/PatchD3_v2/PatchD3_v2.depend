@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1584201820 source:c:\users\samuel gauthier\desktop\python\perso_v2\baic_externe\geo\patchd3_v2\main.cpp
+	<iostream>
+
+1641504581 source:c:\users\samuel gauthier\desktop\python\perso_v2\baic_externe\geo\patchd3_v2\src\base.cpp
+	"base.h"
+
+1641504581 c:\users\samuel gauthier\desktop\python\perso_v2\baic_externe\geo\patchd3_v2\include\base.h
+
+1641392259 source:c:\users\samuel gauthier\desktop\python\perso_v2\baic_externe\geo\patchd3_v2\src\node.cpp
+	"node.h"
+
+1641392258 c:\users\samuel gauthier\desktop\python\perso_v2\baic_externe\geo\patchd3_v2\include\node.h
+

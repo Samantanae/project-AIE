@@ -1,5 +1,5 @@
 from _Personnage_.personnage_sp.basic_sp.Math.Math_stat import stat_p1
-import random
+import random, json
 
 import pandas as pd
 import csv
@@ -8,11 +8,12 @@ from json import dump,load,dumps,loads
 class So_basic:
     __slots__ = "v_min", "v", "v_max", \
                 "m", "m_max", "m_min", \
-                "Bv_max", "save", "Id", "file","diver"
+                "Bv_max", "save", "Id", "file","diver","tempon"
 
     def __init__(self, file=None, Id=None, pere=None, mere=None, v_max=1, v_min=1, v=1, m=0, m_max=0, m_min=0,
                  size=100,diver=None):
         self.diver = diver
+        self.tempon={}
 
         if file:
             self.save = True
@@ -24,9 +25,9 @@ class So_basic:
 
         if (pere is not None) and (mere is not None):  # todo: alors, il y a des parents
             self.__init__child(pere=pere, mere=mere)
-        self._init_p2(v=v,m=m,
-                      v_min=v_min,v_max=v_max,
-                      m_min=m_min,m_max=m_max)
+        self._prep_VM(v=v, m=m,
+                      v_min=v_min, v_max=v_max,
+                      m_min=m_min, m_max=m_max)
         if file is not None:
             self._data_new()
     def __del__(self):
@@ -38,7 +39,7 @@ class So_basic:
         del self.m_max
         del self.Bv_max
 
-    def _init_p2(self, v, m, v_min, v_max, m_min, m_max):
+    def _prep_VM(self, v, m, v_min, v_max, m_min, m_max):
         v_min = abs(v_min)
         v_max = abs(v_max)
         if v_max < v_min:  # inversion
@@ -64,6 +65,7 @@ class So_basic:
                 self.m = m
             else:
                 self.m = stat_p1(self.m_min, self.m_max)
+
     def _data_load(self):
         pass
     def _data_save(self):
@@ -72,6 +74,11 @@ class So_basic:
     def _etape2_data(self):
         pass
 
+    #todo: data ##########################################
+    def _prep_p1_new(self,**kwargs):
+
+        self.tempon["columns"] = [a for a in kwargs]
+        self.tempon["d"] = {a: [] for a in kwargs}
     def _data_new(self, columns=None,
                   d=None):
         """
@@ -118,7 +125,35 @@ class So_basic:
 
         self.Id = compa(list(ind_avant),list(ind_apres))  # todo:         l'ID est apliqué ici.
         df2.to_csv(self.file, index=False)  # todo: optimisation possible ici
+    #todo: prep ##########################################
+    def prepa_p1(self,deadPosibilyty=True, jsonDiver=None, file:str=None,  **kwargs):
+        if jsonDiver is None:
+            jsonDiver = {}
+        self.tempon["saved_data"]=kwargs
 
+
+        self.prepa_p3_basic_argument(**self.prepa_p2_basic(deadPosibilyty))
+        self.prepa_p4_jsonDiver(jsonDiver)
+        # ajouté les autres données
+        if file is not None:
+            self.save = True
+            if ".csv" not in file:    #todo: enti-oups
+                file += ".csv"
+    def prepa_p2_basic(self, deadPosibilyty):
+        if deadPosibilyty:
+            return {"v_min":1, "v":1, "v_max":1,"m":0, "m_max":0, "m_min":0, "Bv_max":0,"deadPosibilyty":deadPosibilyty}
+        else:
+            return {"deadPosibilyty": deadPosibilyty}
+
+    def prepa_p3_basic_argument(self, **basic_argument):
+        for k,item in basic_argument.items():
+            if k not in self.tempon["saved_data"]:
+                self.tempon["saved_data"][k] = item
+    def prepa_p4_jsonDiver(self, jsonDiver):
+        if jsonDiver is None:
+            jsonDiver = {}
+        jsonDiver = json.dumps(jsonDiver)
+        self.saved_data["jsonDiver"]=jsonDiver
     def __init__child(self, pere, mere):
         """
         cette méthode permet de surdéfnire l'ignitialisation dans le cas d'un enfant.
