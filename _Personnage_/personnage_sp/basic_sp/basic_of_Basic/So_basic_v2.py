@@ -1,14 +1,10 @@
 import json
 from _Personnage_.error import NotInCategory
-
 #from _Personnage_.personnage_sp.basic_sp.Math.Math_stat import stat_p1
 import random
-
 import pandas as pd
 import csv
 from json import dump,load,dumps,loads
-
-
 class so_Basic_File_Dead_Posibility:
     __slots__ = "ID","file"
     def __init__(self, arg_basic=None, file:str=None, **kwargs):
@@ -26,12 +22,6 @@ class so_Basic_None_Dead_Posibility:
     __slots__ = "ID", "file"
     def __init__(self, file: str = None, **kwargs):
         pass
-
-
-
-
-
-
 class _dataExterne:
     def __init__(self,file:str,print_=True,**kwargs):
         """
@@ -94,7 +84,6 @@ class _dataExterne:
         del self.df_new_row
         del self.d
         del self.df1
-
     def _prep_p1_new(self,**kwargs):
         self.columns = [a for a in kwargs]
         self.d = {a: [] for a in kwargs}
@@ -192,7 +181,6 @@ class _dataInterne:
             self.__delattr__(key)
         else:
             raise NotInCategory
-
 class So_basic(_dataExterne,_dataInterne):
     __slots__ = "arg_basic","saved_data","file","Id","save"
     def __init__(self, deadPosibilyty=True, file:str=None, jsonDiver=None, **kwargs):
@@ -254,5 +242,4 @@ class So_basic(_dataExterne,_dataInterne):
     def __str__(self):
         super().__str__()
     """
-
 b = So_basic(file="test.csv")

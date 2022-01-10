@@ -42,9 +42,11 @@
 				</Linker>
 			</Target>
 		</Build>
+		<Unit filename="include/IDM.h" />
 		<Unit filename="include/base.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="main.h" />
+		<Unit filename="src/IDM.cpp" />
 		<Unit filename="src/base.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

@@ -34,8 +34,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/base_effet.h" />
 		<Unit filename="include/csv_file.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/base_effet.cpp" />
 		<Unit filename="src/csv_file.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
