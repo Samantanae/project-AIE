@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c244dc04-d600-4959-8fb0-a6982d0ecc96" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../_Personnage_/personnage_sp/basic_sp/Math/data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_Personnage_/personnage_sp/basic_sp/basic_of_Basic/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_Personnage_/personnage_sp/basic_sp/basic_of_Basic/meta.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_Personnage_/personnage_sp/basic_sp/basic_of_Basic/so_basic_v4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_Personnage_/personnage_sp/valeur/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_Personnage_/personnage_sp/valeur/valeur.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/P3Dv6/P3Dv6.layout" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/fonction_de_base/bin/Debug/fonction_de_base.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/fonction_de_base/bin/Debug/libfonction_de_base.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/fonction_de_base/bin/Debug/libfonction_de_base.def" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/fonction_de_base/fonction_de_base.cbp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/fonction_de_base/fonction_de_base.depend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/fonction_de_base/include/Map.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/fonction_de_base/include/P2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/fonction_de_base/include/Patch.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/fonction_de_base/include/basic.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/fonction_de_base/include/partie1.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/fonction_de_base/include/so_basic.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/fonction_de_base/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/fonction_de_base/main.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/fonction_de_base/obj/Debug/main.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/fonction_de_base/obj/Debug/src/Map.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/fonction_de_base/obj/Debug/src/P2.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/fonction_de_base/obj/Debug/src/Patch.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/fonction_de_base/obj/Debug/src/partie1.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/fonction_de_base/src/Map.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/fonction_de_base/src/P2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/fonction_de_base/src/Patch.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/fonction_de_base/src/basic.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/fonction_de_base/src/partie1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/fonction_de_base/src/so_basic.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/math_lab/bin/Debug/math_lab.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/math_lab/include/t.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/math_lab/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/math_lab/math_lab.cbp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/math_lab/math_lab.depend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/math_lab/math_lab.layout" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/math_lab/obj/Debug/main.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/math_lab/obj/Debug/src/t.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/math_lab/src/t.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/test_partch_v_2_35/bin/Debug/test_partch_v_2_35.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/test_partch_v_2_35/include/p.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/test_partch_v_2_35/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/test_partch_v_2_35/obj/Debug/main.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/test_partch_v_2_35/obj/Debug/src/p.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/test_partch_v_2_35/src/p.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/test_partch_v_2_35/test_partch_v_2_35.cbp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/test_partch_v_2_35/test_partch_v_2_35.depend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baic_externe/Geo/test_partch_v_2_35/test_partch_v_2_35.layout" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/base_p1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results - .html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results - .xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_3d/Global_test_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_3d/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_3d/all_proba.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_3d/all_proba_generatorMode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_3d/all_proba_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_3d/caract.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_3d/caract/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_3d/caract/caract.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_3d/caract/func_caract.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_3d/caract/temporaire_fonction/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_3d/caract/temporaire_fonction/graphique_p1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_3d/caract/temporaire_fonction/make_excel_file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_3d/caract/temporaire_fonction/parti_3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_3d/caract/temporaire_fonction/partie1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_3d/caract/temporaire_fonction/t3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_3d/donner3_1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_3d/func_caract.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_3d/make_all_graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_3d/patch_p1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_3d/text_modif_t1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base_caract.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fcontion_de_base/caracterisitque.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../join_image/essais_caract_un.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../join_image/fonction_gestion_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../join_image/long_int.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../template.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../r.exw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test.xs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../travail/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/Perso_v2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/Perso_v2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/csv-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_Personnage_/Personnage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../_Personnage_/Personnage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_Personnage_/personnage_sp/Soif.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../_Personnage_/personnage_sp/Soif.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_Personnage_/personnage_sp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../_Personnage_/personnage_sp/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_Personnage_/personnage_sp/basic_sp/Math/Math_stat.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../_Personnage_/personnage_sp/basic_sp/Math/Math_stat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_Personnage_/personnage_sp/basic_sp/basic_of_Basic/So_basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../_Personnage_/personnage_sp/basic_sp/basic_of_Basic/So_basic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_Personnage_/personnage_sp/basic_sp/basic_of_Basic/Sooooo_basic/V_python/So_basic_Perso.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../_Personnage_/personnage_sp/basic_sp/basic_of_Basic/Sooooo_basic/V_python/So_basic_Perso.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_Personnage_/personnage_sp/basic_sp/basic_of_Basic/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../../_Personnage_/personnage_sp/basic_sp/basic_of_Basic/test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_Personnage_/physique/head/assets/models/buffalo_leather_boots_6f5599bb-ecc1-4702-bcec-b77ba2be082a/textures/everytexture.com-stock-plastic-texture-00020-bump-2048.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../_Personnage_/physique/head/assets/models/buffalo_leather_boots_6f5599bb-ecc1-4702-bcec-b77ba2be082a/textures/everytexture.com-stock-plastic-texture-00020-bump-2048.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_Personnage_/physique/head/assets/models/buffalo_leather_boots_6f5599bb-ecc1-4702-bcec-b77ba2be082a/textures/everytexture.com-stock-plastic-texture-00020-diffuse-2048.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../_Personnage_/physique/head/assets/models/buffalo_leather_boots_6f5599bb-ecc1-4702-bcec-b77ba2be082a/textures/everytexture.com-stock-plastic-texture-00020-diffuse-2048.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_Personnage_/physique/head/assets/models/buffalo_leather_boots_6f5599bb-ecc1-4702-bcec-b77ba2be082a/textures/everytexture.com-stock-plastic-texture-00020-normal-2048.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../_Personnage_/physique/head/assets/models/buffalo_leather_boots_6f5599bb-ecc1-4702-bcec-b77ba2be082a/textures/everytexture.com-stock-plastic-texture-00020-normal-2048.jpg" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportTestResults" exportFormat="Xml" outputFolder="$PROJECT_DIR$" userTempatePath="" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Unit Test" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="27CnxZU3U5BHkaAQ3Bscwja31U9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="Python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_3d" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Samuel Gauthier\OneDrive - Cégep de Baie-Comeau\Documents\algo\copy_divers\Perso_v2\data\base\base_p1\_3d" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Samuel Gauthier\OneDrive - Cégep de Baie-Comeau\Documents\algo\copy_divers\Perso_v2\data\base\base_p1\_3d\caract\temporaire_fonction\t3" />
+      <recent name="C:\Users\Samuel Gauthier\OneDrive - Cégep de Baie-Comeau\Documents\algo\copy_divers\Perso_v2\data\base\base_p1\_3d\caract\temporaire_fonction\t2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.scratch_28">
+    <configuration name="graphique_p1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="base_p1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_3d/caract/temporaire_fonction" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_3d/caract/temporaire_fonction/graphique_p1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="make_excel_file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="base_p1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_3d/caract/temporaire_fonction" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_3d/caract/temporaire_fonction/make_excel_file.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="parti_3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="base_p1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_3d/caract/temporaire_fonction" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_3d/caract/temporaire_fonction/parti_3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch_28" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="base_p1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_28.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="t3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="base_p1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_3d/caract/temporaire_fonction" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_3d/caract/temporaire_fonction/t3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.scratch_28" />
+        <item itemvalue="Python.make_excel_file" />
+        <item itemvalue="Python.t3" />
+        <item itemvalue="Python.parti_3" />
+        <item itemvalue="Python.graphique_p1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c244dc04-d600-4959-8fb0-a6982d0ecc96" name="Changes" comment="" />
+      <created>1648833184120</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648833184120</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/_3d/all_proba.py</url>
+          <line>105</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/_3d/all_proba.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/_3d/all_proba.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/_3d/all_proba.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/_3d/all_proba.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/_3d/all_proba.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/_3d/all_proba.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/_3d/all_proba.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/_3d/caract/temporaire_fonction/make_excel_file.py</url>
+          <line>168</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/_3d/caract/temporaire_fonction/make_excel_file.py</url>
+          <line>169</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/_3d/caract/temporaire_fonction/make_excel_file.py</url>
+          <line>170</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/_3d/caract/temporaire_fonction/make_excel_file.py</url>
+          <line>171</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
